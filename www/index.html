@@ -44,7 +44,7 @@
         <script type="text/javascript">
 
            $(function(){
-                var url = ""
+                var url = "cerebrum.co/victimas/campesino-feliz.png"
                 $('#shareFacebook').click(function(){
                     window.open('https://m.facebook.com/sharer.php?u='+url, '_blank');
                 });
@@ -73,13 +73,15 @@
 
          <div data-role="page" data-theme="a" id="home">
             <div data-role="header" data-theme="a" style="text-align:right;">
-                <span class="fontHeader" style="padding-right: 10px;">Colombia Sin Victimas</span>
+                <!--span class="fontHeader" style="padding-right: 10px;">
+                    <img src="icon.png" style="width:15%">
+                </span-->
             </div>
             <div data-role="content" id="contenthome" style="text-align:center;">
                 <!--a href="#question">
                     <img src="img/jugar.png" style="height: 15%;position: absolute;bottom: 117px;right: 38px;" />
                 </a-->
-                <a href="#question" data-role="button" style="font-family: 'Forte';width: 50%;position: absolute;bottom: 20%;font-size:30px;margin: auto;left: 27%;" data-theme="g">JUGAR</a>
+                <a href="#question" data-role="button" id="play" style="font-family: 'Forte';width: 50%;position: absolute;bottom: 16%;font-size:30px;margin: auto;left: 27%;" data-theme="g">JUGAR</a>
             </div>
             <div data-role="footer" data-theme = "a" data-position="fixed">
                 <div style="text-align:right;">
@@ -92,7 +94,7 @@
 
         <div data-role="page" data-theme="a" id="question">
             <div data-role="header" data-theme="a" style="text-align:right;">
-                <span class="fontHeader" style="padding-right: 10px;">Colombia Sin Victimas</span>
+                <!--span class="fontHeader" style="padding-right: 10px;">Colombia Sin Victimas</span-->
             </div>
             <div data-role="content" id="contentquestion" style="text-align:center;">
 
@@ -114,9 +116,9 @@
                 
 
 
-                <table style="width:90%;" cellspacing="0px">
+                <table style="width:97%;" cellspacing="0px">
                     <tr >
-                        <td width="10%" style="text-align:right;font-size:30px;font-family: 'Forte';"><span id="vidas"></span> </td>
+                        <td width="10%" style="text-align:right;font-size:30px;font-family:'Forte';"><span id="vidas"></span> </td>
                         <td width="60%" style="text-align:left;">
                             <img src="img/vida.png" width:"90%">
                         </td>
@@ -163,10 +165,6 @@
                                 </div>
                             </form>
                             
-
-
-                           
-                                
                         </td>
                     </tr>
                 </table>

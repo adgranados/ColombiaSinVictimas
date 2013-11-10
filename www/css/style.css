@@ -36,17 +36,17 @@
 
 
 @font-face {
-font-family: “Forte”;
-src: url(Forte.ttf) format(“truetype”);
+font-family: "Forte";
+src: url(../fonts/Forte.ttf) format("opentype");
 }
 
 body {
-font-family: “Forte”;
+	font-family: "Forte";
 }
 
 .fontHeader{
 	font-size: 25px;
-	font-family: 'Forte';
+	font-family: "Forte";
 	color:#94BC17;
 }
 
@@ -59,11 +59,15 @@ font-family: “Forte”;
     position: fixed;
 }
 
+#play span span{
+	font-size: 48px;
+}
+
 #question #contentquestion{
 	background-image:url('../img/fondo_principal.png');
-	background-size:94% 100%;
+	background-size:100% 100%;
 	background-repeat:no-repeat;
-	width: 100%; 
+	/*width: 100%; */
     height: 100%; 
     /**position: fixed;**/
 }
