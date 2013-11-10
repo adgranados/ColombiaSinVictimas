@@ -1,0 +1,165 @@
+
+#cargando{
+	background-color: rgba(0,0,255,0.5);
+}
+#buena{
+	background: rgba(0,255,0,0.5) url(../img/campesino-feliz.png) right no-repeat;
+	/*background-color: rgba();*/
+}
+#mala{
+	/*background-color: rgba();*/
+	background: rgba(255,0,0,0.5) url(../img/campesino-triste.png) right no-repeat;
+}
+#Perdiste{
+	background: rgba(0,0,0,0.8) url(../img/tumba.png) right no-repeat;
+}
+#ganaste{
+	background-color: rgba(200,220,150,0.5);
+}
+
+#cargando, #buena, #mala, #Perdiste, #ganaste{
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 10000;
+
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	width: 100%; 
+    height: 100%; 
+    position: fixed;
+}
+
+
+@font-face {
+font-family: “Forte”;
+src: url(Forte.ttf) format(“truetype”);
+}
+
+body {
+font-family: “Forte”;
+}
+
+.fontHeader{
+	font-size: 25px;
+	font-family: 'Forte';
+	color:#94BC17;
+}
+
+#home #contenthome{
+	background-image:url('../img/pagina-intermedia.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	width: 100%; 
+    height: 100%; 
+    position: fixed;
+}
+
+#question #contentquestion{
+	background-image:url('../img/fondo_principal.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	width: 100%; 
+    height: 100%; 
+    /**position: fixed;**/
+}
+
+.basicBox{
+	border-radius: 10px 0px 0px 10px;
+	text-align: justify;
+	padding: 10px;
+	box-shadow: 10px 10px 10px #AAAAAA;
+
+}
+
+.boxLogo{
+	border-radius: 0px 10px 10px 0px;
+	padding: 10px;
+	box-shadow: 10px 10px 10px #AAAAAA;
+	text-align: center;
+	font-size:9px;
+	font-family:verdana;
+}
+
+.purpleBox{
+	border: 10px solid #C40C87;
+	background-color:#EFB4E1;
+}
+
+.purpleLogo{
+	border: 0px solid #C40C87;
+	background-color:#C40C87;
+	color:white;
+}
+/*img/participacion.png Participación y Organización*/
+
+.greenBox{
+	border: 10px solid #80C10E;
+	background-color:#D4F281;
+}
+
+.greenLogo{
+	border: 0px solid #80C10E;
+	background-color:#80C10E;
+	color:white;
+}
+/*img/reparacion-integral.png - Reparación Integral*/
+
+.redBox{
+	border: 10px solid #D80B0B;
+	background-color:#f48c8c;
+}
+
+.redLogo{
+	border: 0px solid #D80B0B;
+	background-color:#D80B0B;
+	color:white;
+}
+/*img/verdad-y-justicia.png - Verdad y Justicia*/
+
+
+
+.lilaBox{
+	border: 10px solid #D60DD1;
+	background-color:#F9A0F9;
+}
+
+.lilaLogo{
+	border: 0px solid #D60DD1;
+	background-color:#D60DD1;
+	color:white;
+}
+/*img/ejes-transversales.png - Ejes Transversales*/
+
+
+.orangeBox{
+	border: 10px solid #FF9203;
+	background-color:#F9C893;
+}
+
+.orangeLogo{
+	border: 0px solid #FF9203;
+	background-color:#FF9203;
+	color:white;
+}
+/*img/prevencion-y-proteccion.png - Prevención y Protección*/
+
+
+.blueBox{
+	border: 10px solid #0B92F7;
+	background-color:#87CBF4;
+}
+
+.blueLogo{
+	border: 0px solid #0B92F7;
+	background-color:#0B92F7;
+	color:white;
+}
+/*img/asistencia-y-atencion.png - Asistencia y Atención*/
+
+
+
