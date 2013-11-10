@@ -95,9 +95,26 @@ $(function(){
 
 					showBuena: function(){
 						$("#buena").show();
+						function getPhoneGapPath() {
+						    var path = window.location.pathname;
+						    //var path = '/android_asset/www/index.html'; //delete this line! test only
+						    path = path.substr( path, path.length - 10 );
+						    return 'file://' + path;
+						};
+			     		var snd = new Media( getPhoneGapPath() + 'bien.wav' );
+			     		snd.play(); 
 					},
 					showMala: function(){
 						$("#mala").show();
+						function getPhoneGapPath() {
+						    var path = window.location.pathname;
+						    //var path = '/android_asset/www/index.html'; //delete this line! test only
+						    path = path.substr( path, path.length - 10 );
+						    return 'file://' + path;
+						};
+			     		var snd = new Media( getPhoneGapPath() + 'susto.wav' );
+			     		snd.play(); 
+						$("#buena").hide();
 					},
 					showPerdiste: function(){
 						$("#Perdiste").show();
