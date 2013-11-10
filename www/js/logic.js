@@ -32,12 +32,9 @@ $(function(){
 		    path = path.substr( path, path.length - 10 );
 		    return 'file://' + path;
 		};
-     	$("#play_1").click(function(){
-     		alert("Hola");
-     		//$("#bien")[0].play();
-     		var snd = new Media( getPhoneGapPath() + 'bien.wav' );
-     		snd.play();     		
-     	})
+
+
+
 
 		PCSV = {
 
@@ -56,7 +53,34 @@ $(function(){
 						PCSV.messages.hideMala();
 						PCSV.messages.hidePerdiste();
 						PCSV.messages.hideGanaste();
-						
+						var url = "cerebrum.co/victimas/campesino-feliz.png"
+                
+		                $('#shareFacebook').click(function(){
+		                    window.open('https://m.facebook.com/sharer.php?u='+url, '_blank');
+		                });
+
+		                $('#iniciar').click(function(){
+		                    $("#Ganaste").hide()
+		                    PCSV.vidas = 5;
+		                    PCSV.lives.show();
+		                    PCSV.percent = 0;
+		                    PCSV.current_count_answers = 0;
+		                    $("#progress").html(PCSV.percent);
+							$("progress").val(PCSV.percent);
+							$("progress div span").css("width",PCSV.percent).html(PCSV.percent+"%");
+		                    $.mobile.navigate( "#home" );
+		                });
+
+		                $("#cambiarPregunta").button().click(function(){
+		                	if(PCSV.puntos>=5){
+		                		PCSV.points.miss(5);
+		                		question = PCSV.getRamdonQuestion()
+								PCSV.showQuestion(question,"#questionTemplate");
+		                	}else{
+		                		 $("#cambiarPregunta").hide();
+		                	}
+		                });
+								
 				},
 
 				loadQuestions:function(){
@@ -101,8 +125,8 @@ $(function(){
 						    path = path.substr( path, path.length - 10 );
 						    return 'file://' + path;
 						};
-			     		var snd = new Media( getPhoneGapPath() + 'bien.wav' );
-			     		snd.play(); 
+			     		//var snd = new Media( getPhoneGapPath() + 'bien.wav' );
+			     		//snd.play(); 
 					},
 					showMala: function(){
 						$("#mala").show();
@@ -112,8 +136,8 @@ $(function(){
 						    path = path.substr( path, path.length - 10 );
 						    return 'file://' + path;
 						};
-			     		var snd = new Media( getPhoneGapPath() + 'susto.wav' );
-			     		snd.play(); 
+			     		//var snd = new Media( getPhoneGapPath() + 'susto.wav' );
+			     		//snd.play(); 
 						$("#buena").hide();
 					},
 					showPerdiste: function(){
@@ -311,6 +335,8 @@ $(function(){
 				points:{
 					show: function(){
 						$("#puntos").html(PCSV.puntos)
+						if(PCSV.puntos >= 5)
+							$("#cambiarPregunta").show("slow");
 					},
 					add: function(cant){
 

@@ -1,6 +1,6 @@
 
 #cargando{
-	background-color: rgba(0,0,255,0.5);
+	background: rgba(0,0,255,0.5) url(../img/cargando.png) right no-repeat;
 }
 #buena{
 	background: rgba(0,255,0,0.5) url(../img/campesino-feliz.png) right no-repeat;

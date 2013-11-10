@@ -41,16 +41,6 @@
         <link rel="stylesheet" type="text/css" href="css/progressbar.css">
 
         <script type="text/javascript" src="js/logic.js"></script>
-        <script type="text/javascript">
-
-           $(function(){
-                var url = "cerebrum.co/victimas/campesino-feliz.png"
-                $('#shareFacebook').click(function(){
-                    window.open('https://m.facebook.com/sharer.php?u='+url, '_blank');
-                });
-           })
-
-        </script>
     </head>
     <body>
 <audio id="susto" preload >
@@ -86,7 +76,6 @@
             </div>
             <div data-role="footer" data-theme = "a" data-position="fixed">
                 <div style="text-align:right;">
-                    <a href="#" id="shareFacebook" style="text-align:left;">facebook</a>
                     <a href="#" id="rules" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/instrucciones.png" style="width:10%"></a>
                     <a href="#" id="playBien" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:10%"></a>
                 </div>
@@ -100,7 +89,7 @@
             <div data-role="content" id="contentquestion" style="text-align:center;">
 
                 <div id="cargando">
-                    CARGANDO
+                    
                 </div>
                 <div id="buena">
                     
@@ -113,9 +102,9 @@
                 </div>
                 <div id="Ganaste">
                      <br />
-                     <a href="#" data-role="button" id="iniciar" style="font-family: 'Forte';width: 55%;position: absolute;font-size:30px;margin: auto;left: 25%;" data-theme="g">Iniciar de nuevo</a>
-                     Dile a tus amigos q ganaste!!
-                     <a href="#" data-role="button" id="iniciar" style="font-family: 'Forte';width: 55%;position: absolute;font-size:30px;margin: auto;left: 25%;" data-theme="h">Compartir</a>
+                     <a href="javascript.void(1)" data-role="button" id="iniciar" style="font-family: 'Forte';width: 55%;position: absolute;font-size:30px;margin: auto;left: 25%;" data-theme="g">Iniciar de nuevo</a>
+                     <br /><br /><br />Dile a tus amigos q ganaste!!
+                     <a href="javascript.void(1)" data-role="button" id="shareFacebook" style="font-family: 'Forte';width: 55%;position: absolute;font-size:30px;margin: auto;left: 25%;top: 81px;" data-theme="h">Compartir</a>
                 </div>
                 
 
@@ -169,6 +158,11 @@
                                 </div>
                             </form>
                             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right"> 
+                            <a href="javascript:void()" id="cambiarPregunta" >Cambiar Pregunta</a>
                         </td>
                     </tr>
                 </table>
