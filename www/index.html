@@ -20,8 +20,9 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--meta name="format-detection" content="telephone=no" /-->
+        <!--meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
         <title>PorColombiaSinVictimas</title>
 
@@ -40,8 +41,28 @@
         <link rel="stylesheet" type="text/css" href="css/progressbar.css">
 
         <script type="text/javascript" src="js/logic.js"></script>
+        <script type="text/javascript">
+
+           $(function(){
+                var url = ""
+                $('#shareFacebook').click(function(){
+                    window.open('https://m.facebook.com/sharer.php?u='+url, '_blank');
+                });
+           })
+
+        </script>
     </head>
     <body>
+<audio id="susto" preload >
+  <source src="sounds/susto.mp3" type="audio/mp3">
+  <source src="sounds/susto.ogg" type="audio/ogg">
+  <source src="sounds/susto.wav" type="audio/wav">
+</audio>
+<audio id="bien" preload >
+  <source src="sounds/bien.mp3" type="audio/mp3">
+  <source src="sounds/bien.ogg" type="audio/ogg">
+  <source src="sounds/bien.wav" type="audio/wav">
+</audio>
         <!--div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
@@ -62,9 +83,9 @@
             </div>
             <div data-role="footer" data-theme = "a" data-position="fixed">
                 <div style="text-align:right;">
+                    <a href="#" id="shareFacebook" style="text-align:left;">facebook</a>
                     <a href="#" id="rules" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/instrucciones.png" style="width:15%"></a>
-                    <a href="#" id="rules" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/instrucciones.png" style="width:15%"></a>
-                    <a href="#" id="rules1" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:15%"></a>
+                    <a href="#" id="playBien" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:15%"></a>
                 </div>
             </div>
         </div>
@@ -166,7 +187,7 @@
             <div data-role="footer" data-theme = "a">
                 <div style="text-align:right;">
                     <a href="#" id="rules" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/instrucciones.png" style="width:15%"></a>
-                    <a href="#" id="rules1" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:15%"></a>
+                    <a href="#" id="play" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:15%"></a>
                 </div>
                 <!--a href="#pagina2"  id="borrar" onclick="javascript:void(0)">xxxxxx</a>
                 <a href="#pagina2" >xxxxxx</a-->

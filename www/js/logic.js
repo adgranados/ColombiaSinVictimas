@@ -1,6 +1,9 @@
 $(function(){
 
      $(document).on("pageinit","#question",function(event){
+     	$("#play").click(function(){
+     		$("#bien")[0].play();
+     	})
 
 		PCSV = {
 
