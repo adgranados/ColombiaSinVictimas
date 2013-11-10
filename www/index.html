@@ -58,6 +58,7 @@
   <source src="sounds/susto.ogg" type="audio/ogg">
   <source src="sounds/susto.wav" type="audio/wav">
 </audio>
+
 <audio id="bien" preload >
   <source src="sounds/bien.mp3" type="audio/mp3">
   <source src="sounds/bien.ogg" type="audio/ogg">
@@ -71,7 +72,7 @@
             </div>
         </div-->
 
-         <div data-role="page" data-theme="a" id="home">
+         <div data-role="page" data-theme="b" id="home">
             <div data-role="header" data-theme="a" style="text-align:right;">
                 <!--span class="fontHeader" style="padding-right: 10px;">
                     <img src="icon.png" style="width:15%">
@@ -92,7 +93,7 @@
             </div>
         </div>
 
-        <div data-role="page" data-theme="a" id="question">
+        <div data-role="page" data-theme="b" id="question">
             <div data-role="header" data-theme="a" style="text-align:right;">
                 <!--span class="fontHeader" style="padding-right: 10px;">Colombia Sin Victimas</span-->
             </div>
@@ -108,10 +109,13 @@
                     
                 </div>
                 <div id="Perdiste">
-                    <a href="#" onclick="window.location.reload();" style="position:absolute;bottom: 58px;right: 15px;">Reintentaar</a>
+                    <a href="#" onclick="window.location.reload();" data-role="button" id="reintentar" style="font-family: 'Forte';width: 70%;position: absolute;bottom: 3%;font-size:30px;margin: auto;left: 27%;" data-theme="g">Reintentar</a>
                 </div>
                 <div id="Ganaste">
-                    GANASTE <br > <a href="javascript:void(1)" id="restart"> Iniciar de nuevo</a>
+                     <br />
+                     <a href="#" data-role="button" id="iniciar" style="font-family: 'Forte';width: 55%;position: absolute;font-size:30px;margin: auto;left: 25%;" data-theme="g">Iniciar de nuevo</a>
+                     Dile a tus amigos q ganaste!!
+                     <a href="#" data-role="button" id="iniciar" style="font-family: 'Forte';width: 55%;position: absolute;font-size:30px;margin: auto;left: 25%;" data-theme="h">Compartir</a>
                 </div>
                 
 
@@ -182,11 +186,11 @@
                 
                 
             </div>
-            <div data-role="footer" data-theme = "a">
+            <div data-role="footer" data-theme = "a" data-position="fixed">
                 <div style="text-align:right;">
                     <a href="#" id="rules" onclick="javascript:void(0)" data-mini="true" style="padding:5px;"><img src="img/instrucciones.png" style="width:10%"></a>
-                    <a href="#" id="play" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:10%"></a>
-                </div>
+                    <a href="#" id="play_1" data-mini="true" style="padding:5px;"><img src="img/sonido_habilitado.png" style="width:10%"></a>
+                </div> 
                 <!--a href="#pagina2"  id="borrar" onclick="javascript:void(0)">xxxxxx</a>
                 <a href="#pagina2" >xxxxxx</a-->
             </div>

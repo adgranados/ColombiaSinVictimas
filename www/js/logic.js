@@ -5,7 +5,7 @@ $(function(){
      $(document).on("pageinit","#question",function(event){
 
 
-     	function playAudio(url) {
+     	/*function playAudio(url) {
 		    // Play the audio file at url
 		    var my_media = new Media(url,
 		        // success callback
@@ -24,10 +24,19 @@ $(function(){
 		    /*setTimeout(function() {
 		        media.pause();
 		    }, 10000);*/        
-		}
-     	$("#play").click(function(){
+		/*}*/
+
+		function getPhoneGapPath() {
+		    var path = window.location.pathname;
+		    //var path = '/android_asset/www/index.html'; //delete this line! test only
+		    path = path.substr( path, path.length - 10 );
+		    return 'file://' + path;
+		};
+     	$("#play_1").click(function(){
+     		alert("Hola");
      		//$("#bien")[0].play();
-     		playAudio("sounds/bien.mp3")     		
+     		var snd = new Media( getPhoneGapPath() + 'bien.wav' );
+     		snd.play();     		
      	})
 
 		PCSV = {
@@ -251,8 +260,8 @@ $(function(){
 				},
 				percentf:{
 					update: function(){
-						PCSV.percent = PCSV.current_count_answers / 20 *100
-						if(PCSV.percent == 20)
+						PCSV.percent = PCSV.current_count_answers / 5 *100
+						if(PCSV.percent == 5)
 							PCSV.lives.add()
 						else if(PCSV.percent == 100)
 							PCSV.messages.showGanaste();

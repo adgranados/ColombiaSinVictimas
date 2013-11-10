@@ -13,11 +13,12 @@
 #Perdiste{
 	background: rgba(0,0,0,0.8) url(../img/tumba.png) right no-repeat;
 }
-#ganaste{
-	background-color: rgba(200,220,150,0.5);
+#Ganaste{
+	background: rgba(200,220,150,0.9) url(../img/ganador.png) right no-repeat; 
+
 }
 
-#cargando, #buena, #mala, #Perdiste, #ganaste{
+#cargando, #buena, #mala, #Perdiste, #Ganaste{
 	top:0px;
 	bottom:0px;
 	left:0px;
@@ -61,6 +62,14 @@ body {
 
 #play span span{
 	font-size: 48px;
+}
+
+#reintentar span span{
+	font-size: 30px;
+}
+
+#iniciar span span{
+	font-size: 20px;
 }
 
 #question #contentquestion{
